@@ -2,8 +2,8 @@
 import cv2
 
 # read image files
-photo1=cv2.imread('rodion-kutsaev-4k8xEFW4_3Q-unsplash.jpg')
-photo2=cv2.imread('rodion-kutsaev-B2mc0Ibo8ok-unsplash.jpg')
+photo1=cv2.imread('photo1.jpg')
+photo2=cv2.imread('photo2.jpg')
 
 # showing image of photo1
 cv2.imshow('hi',photo1)
@@ -32,10 +32,10 @@ cv2.waitKey()
 cv2.destroyAllWindows()
 
 # restoring photo1 which's croped pixel is removed now from center
-photo1=cv2.imread('rodion-kutsaev-4k8xEFW4_3Q-unsplash.jpg')
+photo1=cv2.imread('photo1.jpg')
 
 # restoring photo2 which's croped pixel is removed now from center
-photo2=cv2.imread('rodion-kutsaev-B2mc0Ibo8ok-unsplash.jpg')
+photo2=cv2.imread('photo2.jpg')
 
 #swap croping image of ph2 to photo1
 photo1[180:421,300:687]=ph2
